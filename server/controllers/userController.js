@@ -78,7 +78,7 @@ export const getPublishedImage = async(req, res) => {
             {
                 $match: {
                     "messages.isImage": true,
-                    "messages.isPubished": true
+                    "messages.isPublished": true
                 }
             },
             {

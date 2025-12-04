@@ -3,7 +3,7 @@ import { User } from "./User.model.js"
 
 const chatSchema = new Schema({
     userId: {
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: User,
         required: true
     },
